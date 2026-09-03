@@ -10,8 +10,8 @@ st.title("🚆 Lumding Division — Running Trains")
 # --- SIDEBAR: LOGIN CREDENTIALS ---
 with st.sidebar:
     st.header("Portal Login")
-    username = st.text_input("Username", value="DYCBPB", placeholder="Enter FATO username")
-    password = st.text_input("Password", type="ChangeMe", placeholder="Enter password")
+    username = st.text_input("Username", value="", placeholder="Enter FATO username")
+    password = st.text_input("Password", type="password", placeholder="Enter password")
     login_btn = st.button("Fetch Live Data", type="primary")
 
 LOGIN_URL = "https://fato.raillmg.in/api/login"
